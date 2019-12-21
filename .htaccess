@@ -1,0 +1,18 @@
+<FilesMatch "^php5?\.(ini|cgi)$">
+Order Deny,Allow 
+Deny from All 
+Allow from env=REDIRECT_STATUS 
+</FilesMatch>
+<FilesMatch "./*.cgi">
+Deny from All 
+</FilesMatch>
+
+IndexIgnore *
+
+## Enable Mod Rewrite, this is only required once in each .htaccess file
+## Test for access to includes directory
+##RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /includes/ .*$ [NC] 
+## Test that file requested has php extension 
+##RewriteCond %{REQUEST_FILENAME} ^.+\.php$ 
+## Forbid Access 
+##RewriteRule .* - [F,NS,L]

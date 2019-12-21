@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-emphasis: none;
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+}
+
+#login {
+    /*margin-top: 100px;*/
+    text-align: center;
+    display: block;
+    border: 1px black solid;
+    padding: 20px;
+    margin: 100px 30%;
+}
+#login form *{
+    margin: 5px;
+    padding: 10px;
+}
+
+
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 80px;
+}
+header a{
+    color: aquamarine;
+}
+
+
+nav {
+    display: block;
+    background-color: #DEB887;
+    height: 40px;
+    border-bottom: 2px solid black;
+    font-size: 25px;
+}
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+nav li:not(:last-child) {
+    float: left;
+    padding: 6px 20px;
+    border-right: 1px solid black;
+}
+nav li:last-child {
+    padding: 6px 20px;
+    border-left: 1px solid black;
+}
+nav li:hover {
+    background-color: #E39F46;
+}
+nav a {
+    font-weight: bold;
+}
+nav img {
+    width: 32px;
+    height: 32px;
+    float: right;
+    border-left: 2px solid black;
+    padding: 5px;
+}
+
+#products {
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 5px;
+    margin: 15px;
+}
+#products * {
+    margin: 10px;
+}
+
+table {
+    margin: auto;
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid black;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+td a {
+    text-decoration: underline;
+    color: blue;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#edit {
+    width: 100%;
+    background-color: #eee;
+}
+#edit label{
+    border: 1px solid #dddddd;
+}
